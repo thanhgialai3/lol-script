@@ -13,7 +13,7 @@
 It's using mouse_event and keybd_event to interact with game and using ReadProcessMemory (WINAPI) to read information from game.
 
 
-Also using lua scripting code to allow scripting own toys.
+Also using lua scripting to allow scripting own toys.
 
 [Example Lua Script](https://github.com/frekons/lol-script/blob/master/Example.lua)
 
