@@ -17,5 +17,10 @@ Also using lua scripting to allow scripting own toys.
 
 [Example Lua Script](https://github.com/frekons/lol-script/blob/master/Example.lua)
 
+[Example Lua Script](https://github.com/frekons/lol-script/blob/master/XuacsInItsWay/orbwalker.lua)
+
 [Scripts References](https://github.com/frekons/lol-script/blob/master/References.txt)
+
+
+
 
