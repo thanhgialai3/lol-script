@@ -57,16 +57,4 @@ public:
 	bool DataCompare(const BYTE* pData, const BYTE* pMask, const char* pszMask);
 };
 
-struct Glow {
-	DWORD pEntity;
-	float r;
-	float g;
-	float b;
-	float a;
-	uint8_t unk1[16];
-	bool RenderWhenOccluded;
-	bool RenderWhenUnoccluded;
-	bool FullBloom;
-	uint8_t unk2[14];
-};
 #endif
