@@ -7,7 +7,6 @@
 ## All the offsets etc. are outdated and i won't update them, this is an old challenge for me.
 
 
-[![a old video from my friend](https://img.youtube.com/vi/XWCuZ-9QSnY/0.jpg)](https://www.youtube.com/watch?v=XWCuZ-9QSnY)
-
+<iframe width="560" height="315" src="https://www.youtube.com/embed/XWCuZ-9QSnY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 It's using mouse_event and keybd_event to interact with game and using ReadProcessMemory (WINAPI) to read information from game.
