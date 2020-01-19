@@ -1,0 +1,127 @@
+
+global events:
+	Loop() -- gets called in every tick
+	OnDraw() -- gets called in every draw state
+	
+
+
+global variables:
+	CObject myHero
+	CObject underMouseObject
+	CObjectList all_champions
+	CObjectList all_missiles
+	CObjectList all_mobs
+	mapintint priority_list
+	float attack_cast_delay_multiplier
+	float attack_delay_multiplier
+	float attack_under_hp_percent
+	
+
+global functions:
+	-> Vec2 W2S(Vec3 position) -- WorldToScreen position
+	-> int GetPing()
+	-> void log(type variable) -- print
+	-> void sleep(int milliseconds)
+	-> void read_entities() -- reads entities to [ all_champions, all_mobs, all_missiles  ]
+	-> void read_heroes() -- reads heroes to [ all_champions ]
+	-> void read_my_hero() -- reads local player to [ myHero, underMouseObject ]
+	-> int now() -- returns GetTickCount(), current time in milliseconds
+	-> void DrawLine(Vec2 start_pos, Vec2 end_pos)
+	-> void DrawCircle(Vec3 pos, int edge_count, int radius)
+	-> void ScriptClick(int x, int y) -- moves mouse on stated position then clicks 'L' key then moves mouse back 
+	-> void RightClick()
+	-> void LeftClick()
+	-> void KeyboardClick(int key) --
+	-> void Move(int x, int y) -- moves mouse
+	-> void MoveTo(int x, int y) -- moves hero
+	-> bool IsKeyPressed(int key)
+	-> CObject GetObjectByIndex(int index)
+
+-----------------------------------------------------------------
+
+
+class CObject:
+	variables:
+		-> float health
+		-> float max_health
+		-> Vec3 position
+		-> int network_id
+		-> int team
+		-> int source_index
+		-> int target_id
+		-> int visible
+		-> float mana
+		-> float max_mana
+		-> float bonus_attack
+		-> float bonus_ability_attack
+		-> float bonus_magic_resist
+		-> float attack_speed_mod
+		-> float attack_range
+		-> float base_attack
+		-> float crit_mod
+		-> float armor
+		-> float magic_resist
+		-> float move_speed
+		-> int base_address
+		-> int predicted_after_time
+		-> float predicted_health
+		-> int focus_count
+		
+	functions:
+		-> bool IsHero()
+		-> bool IsMinion()
+		-> bool IsTurret()
+		-> bool IsMissile()
+		-> string GetName()
+		-> string GetHeroName()
+		-> bool IsTargetable()
+		-> bool IsDead()
+		-> bool IsValid() -- this does: return !IsDead()  && IsTargetable()
+		-> float GetAttackDelay()
+		-> float GetAttackCastDelay()
+		-> bool IsAttacking() -- returns true if you are attacking at the moment
+		-> bool IsColliding(Vec3 start_pos, Vec3 end_pos, float width)
+		
+-----------------------------------------------------------------
+		
+class CObjectList: -- that's std::vector<CObject> in c++
+		variables:
+		
+		functions:
+			-> void push(CObject object)
+			-> CObject at(int index)
+			-> int size()
+
+-----------------------------------------------------------------
+
+class map: -- std::map<int, int>
+		variables:
+		
+		functions:
+			-> int at(int index)
+			-> iterator find(int index)
+			-> iterator endv()
+
+-----------------------------------------------------------------
+
+
+class Vec3:
+	variables:
+		-> float x
+		-> float y
+		-> float z
+		
+	functions:
+		Constructor(float x, float y, float z)
+
+-----------------------------------------------------------------
+			
+			
+class Vec2:
+	variables:
+		-> float x
+		-> float y
+		
+	functions:
+		Constructor(float x, float y)
+			
