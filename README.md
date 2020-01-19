@@ -1,10 +1,12 @@
-# lol-script
+
+# THIS PROJECT HAS BEEN MADE FOR LEARNING PURPOSES, I DO NOT USE IT IN ONLINE MODES AND I DO NOT PROVIDE IT TO SOMEONE TO USE IN ONLINE MODES
+
+
+## lol-script
  an old(2018) lol script
 
 
-### THIS PROJECT HAS BEEN MADE FOR LEARNING PURPOSES, I DO NOT USE IT IN ONLINE MODES AND I DO NOT PROVIDE IT TO SOMEONE TO USE IN ONLINE MODES
-
-## All the offsets etc. are outdated and i won't update them, this is an old challenge for me.
+### All the offsets etc. are outdated and i won't update them, this is an old challenge for me.
 
 
 [![a old video from my friend](https://i.imgur.com/MqrblXc.jpg)](https://www.youtube.com/watch?v=XWCuZ-9QSnY)
